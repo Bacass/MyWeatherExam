@@ -73,7 +73,7 @@ class MainFragment : Fragment() {
             //    &_returnType=json
             //    &ServiceKey=657OeqBgOnfylmDONGQhlx9erLCC7VZ4O32T6eW7WjWsGPiw5eimj46CfpLRQVmj55cf4k3BIr1p5XnGnmAl0w==
 
-            var callBack = NetRetrofit.instance.service.getMsrstnAcctoRltmMesureDnsty("1", "1", "광진구", "DAILY", "1.3", "json", "657OeqBgOnfylmDONGQhlx9erLCC7VZ4O32T6eW7WjWsGPiw5eimj46CfpLRQVmj55cf4k3BIr1p5XnGnmAl0w==")
+            var callBack = NetRetrofit.instance.service.getMsrstnAcctoRltmMesureDnsty("1", "1", "광진구", "DAILY", "1.3", "json", context!!.getString(R.string.service_key))
 
 
 
