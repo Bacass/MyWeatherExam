@@ -1,11 +1,13 @@
 package com.lee.myweatherexam.ui.main
 
+
 import android.os.Bundle
-import android.support.v4.app.Fragment
+
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import com.google.gson.Gson
 import com.lee.myweatherexam.R
 import com.lee.myweatherexam.databinding.MainFragmentBinding
@@ -94,19 +96,19 @@ class MainFragment : Fragment() {
 
                     // grade = 1:좋음, 2:보통, 3:나쁨, 4:매우나쁨
 
-                    resultString?.append("미세먼지")
-                    resultString?.append("\n")
-                    resultString?.append("PM10 value : ${weatherData?.pm10Value}")
-                    resultString?.append("\n")
-                    resultString?.append("PM10 grade: ${weatherData?.pm10Grade}, " + gradeToKorean(weatherData?.pm10Grade))
-                    resultString?.append("\n")
-                    resultString?.append("\n")
-                    resultString?.append("초미세먼지")
-                    resultString?.append("\n")
-                    resultString?.append("PM2.5 value : ${weatherData?.pm25Value}")
-                    resultString?.append("\n")
-                    resultString?.append("PM2.5 grade : ${weatherData?.pm25Grade}, " + gradeToKorean(weatherData?.pm25Grade))
-                    resultString?.append("\n")
+                    resultString.append("미세먼지")
+                    resultString.append("\n")
+                    resultString.append("PM10 value : ${weatherData?.pm10Value}")
+                    resultString.append("\n")
+                    resultString.append("PM10 grade: ${weatherData?.pm10Grade}, " + gradeToKorean(weatherData?.pm10Grade))
+                    resultString.append("\n")
+                    resultString.append("\n")
+                    resultString.append("초미세먼지")
+                    resultString.append("\n")
+                    resultString.append("PM2.5 value : ${weatherData?.pm25Value}")
+                    resultString.append("\n")
+                    resultString.append("PM2.5 grade : ${weatherData?.pm25Grade}, " + gradeToKorean(weatherData?.pm25Grade))
+                    resultString.append("\n")
 
                     mBinding?.message?.text = resultString.toString()
                 }
