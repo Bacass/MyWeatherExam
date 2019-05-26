@@ -23,6 +23,7 @@ import java.lang.StringBuilder
 class MainFragment : Fragment() {
 
     companion object {
+        @JvmStatic
         fun newInstance() = MainFragment()
     }
 

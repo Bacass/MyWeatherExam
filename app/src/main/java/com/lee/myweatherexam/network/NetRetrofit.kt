@@ -16,7 +16,7 @@ class NetRetrofit private constructor() {
         .client(httpBuilder.build())
         .build()
 
-    var service = retrofit.create<ServiceApi>(ServiceApi::class.java!!)
+    var service = retrofit.create<ServiceApi>(ServiceApi::class.java)
         internal set
 
     companion object {
